@@ -1,0 +1,6 @@
+@QuintoInventario_HostAddress = http://localhost:5010
+
+GET {{QuintoInventario_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

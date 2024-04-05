@@ -1,0 +1,16 @@
+
+-- Crear la tabla Producto
+CREATE TABLE Producto (
+    Id int PRIMARY KEY IDENTITY(1,1),
+    Nombre varchar(30),
+    Id_Categoria int
+);
+
+-- Crear la tabla Categoria_Producto con Id autoincrementable
+CREATE TABLE Categoria_Producto (
+    Id int PRIMARY KEY IDENTITY(1,1),
+    Nombre varchar(30)
+);
+
+ALTER TABLE Producto
+ADD FOREIGN KEY (Id_Categoria) REFERENCES Categoria_Producto(Id);
